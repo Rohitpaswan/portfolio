@@ -1,0 +1,12 @@
+.mainBox__title{
+    font-weight: bold;
+    border-bottom : 3px solid var(--main-color);
+    letter-spacing: 3px;
+   margin-bottom: 29px;
+   
+}
+
+.about{
+    padding: 30px;
+    
+}

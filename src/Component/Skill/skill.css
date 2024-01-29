@@ -1,0 +1,21 @@
+.edu__title .skill__item {
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+
+}
+
+.custom__icon {
+    font-size: 30px;
+   margin-top: 4rem;
+   color: green
+}
+
+.custom__iconOther{
+    font-size: 30px;
+    margin-top: 4rem;
+    margin-bottom: 15px;
+
+}

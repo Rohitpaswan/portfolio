@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.777);
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.345);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-top: 6px;
+    padding: 6px 5px;
+}
+.left{
+   
+    letter-spacing: 2px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+.footer__left span{
+    color: #a8a2a2;
+}
+
+
+.footer__right span{
+color: #dbdbdb;
+opacity: .7;
+}
+
+@media  (max-width: 900px) {
+    .left{
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,45 @@
+/* Default styles for links and images */
+
+.custom-navbar{
+    background-color: azure;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.navItem{
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+   
+
+}
+
+.header__icons{
+    margin: 3px;
+    padding: 6px;
+    cursor:pointer
+}
+
+.header__icons:hover{
+    color: blue;
+}
+
+.header__smallscreen{
+    display: none;
+}
+
+@media (max-width:991px){
+    .header__lap{
+        display: none;
+    }
+    .header__smallscreen{
+        display: block;
+    }
+}

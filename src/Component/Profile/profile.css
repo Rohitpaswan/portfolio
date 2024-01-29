@@ -1,0 +1,46 @@
+.profile{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 6%;
+  
+}
+
+.profile__name{
+line-height: 18px;
+padding: 10px;
+}
+
+.profile__name .name{
+font-size: 17px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.profile__name .role{
+    font-size: 14px;
+    color: #777;
+}
+
+.profile img{
+    width: 150px; 
+  height: 150px; 
+  border-radius: 50%; /* Creates a circular profile image */
+  border: 2px solid #ccc; /* Border color and width */
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for scaling and shadow */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 45px;
+}
+
+.profile img:hover {
+    border: 2px solid #007bff;  
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);/* Change border color on hover */
+    
+  }
+ 
+  
+  
+  
+  
+  
