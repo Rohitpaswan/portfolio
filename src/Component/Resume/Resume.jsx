@@ -14,9 +14,13 @@ const Resume = () => {
         </Grid>
         <Grid item xs={12} md={12}>
           <Typography className="about">
-          🌟 Hey there! I'm Rohit, your friendly neighborhood web wizard! 🚀<br/>
-          💻 As a web developer, I weave digital magic with HTML, CSS, and JavaScript to craft stunning online experiences.<br/>
-          Let's turn your web dreams into reality!
+            🌟 Hey there! I'm Rohit, your friendly neighborhood web wizard! 🚀
+            <br />
+            💻 As a web developer, I weave digital magic with HTML, CSS, and
+            JavaScript to &nbsp; craft stunning online experiences.
+            <br />
+            <br />
+            &nbsp;Let's turn your web dreams into reality!
           </Typography>
         </Grid>
 

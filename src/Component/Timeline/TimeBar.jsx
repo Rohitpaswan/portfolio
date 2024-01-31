@@ -12,7 +12,7 @@ import { saveAs } from 'file-saver';
 
 import "./timeBar.css";
 const downloadFile =() =>{
-  const pdfUrl = '../../RohitPaswan.pdf'; // Specify the URL or local path to your PDF file
+  const pdfUrl = '../../../RohitPaswan.pdf'; // Specify the URL or local path to your PDF file
   const pdfFilename = 'RohitPaswan.pdf'; // Specify the filename for the downloaded file
   saveAs(pdfUrl, pdfFilename);
   

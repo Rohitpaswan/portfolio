@@ -6,10 +6,10 @@ const Profile = () => {
     <div className="profile container_shadow">
       <div className="profile__name">
         <Typography className="name">Rohit</Typography>
-        <Typography className="role">Frontend Developer</Typography>
+        <Typography className="role">Web Developer</Typography>
       </div>
       <figure>
-        <img src="../Image/profile.jpg" alt="profile_Img" />
+        <img src="../Image/profile.jpg" alt="profile_Img" className="profileImg"/>
       </figure>
       <div className="profile__info"></div>
     </div>

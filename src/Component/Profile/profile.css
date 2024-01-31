@@ -22,7 +22,7 @@ text-transform: uppercase;
 }
 
 .profile img{
-    width: 150px; 
+  width: 150px; 
   height: 150px; 
   border-radius: 50%; /* Creates a circular profile image */
   border: 2px solid #ccc; /* Border color and width */
@@ -30,6 +30,7 @@ text-transform: uppercase;
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for scaling and shadow */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-left: 45px;
+  padding: 4px;
 }
 
 .profile img:hover {

@@ -8,17 +8,19 @@ import Navbar from "react-bootstrap/Navbar";
 import "./header.css";
 import { Button, Box } from "@mui/material";
 import FacebookRounded from "@mui/icons-material/FacebookRounded";
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { NavLink } from "react-router-dom";
+import { Instagram } from "@mui/icons-material";
 const Header = () => {
   const openGmail = () => {
-    const senderEmail = "paswanrohit0207@gmail.com";
+    const senderEmail = "rohitpaswan2444@gmail.com";
     const gmailComposeUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${senderEmail}`;
     window.open(gmailComposeUrl, "_blank");
   };
 
-  const openFacebook = () => {
-    const facebookUrl = "https://www.facebook.com/rohit.paswan.370177/";
-    window.open(facebookUrl, "_blank");
+  const openInstagram = () => {
+    const InstagramUrl = "https://www.instagram.com/rohit_0o0_/";
+    window.open(InstagramUrl, "_blank");
   };
 
   const openGithub = () => {
@@ -41,18 +43,22 @@ const Header = () => {
             />
           </NavLink>
           <div className=" header__smallscreen">
-            <FacebookRounded
+            <Instagram
               className="header__icons"
               sx={{ fontSize: "32px", color: "black" }}
+              onClick={openInstagram}
             />
             <LinkedInIcon
               className="header__icons"
               sx={{ fontSize: "32px", color: "black" }}
+              onClick={openLinkedin}
             />
             <GitHubIcon
               className="header__icons"
               sx={{ fontSize: "32px", color: "black" }}
+              onClick={openGithub}
             />
+            
           </div>
 
           {/* Navigation links */}
@@ -72,10 +78,10 @@ const Header = () => {
           </Navbar.Collapse>
           <div className="header__right header__lap">
             <Container>
-              <FacebookRounded
+              <Instagram
                 className="header__icons"
                 sx={{ fontSize: "36px", color: "black", cursor: "pointer" }}
-                onClick={openFacebook}
+                onClick={openInstagram}
               />
               <LinkedInIcon
                 className="header__icons"
