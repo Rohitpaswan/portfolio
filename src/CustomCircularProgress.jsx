@@ -13,7 +13,7 @@ const CustomCircularProgress = ({ value, text }) => {
       } else {
         clearInterval(interval);
       }
-    }, 1000);
+    }, 900);
 
     return () => clearInterval(interval);
   }, [value, progress]);

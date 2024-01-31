@@ -37,7 +37,7 @@ const Skill = () => {
           </Typography>
           <Stack direction="row" spacing={2} >
             <CustomCircularProgress
-              value={80}
+              value={85}
               text={<AiFillHtml5 className="custom__icon" color="rgba(241, 15, 26, 0.8)"/>}
             />
             <CustomCircularProgress
@@ -45,7 +45,7 @@ const Skill = () => {
               text={<BiLogoCss3 className="custom__icon" color="rgba(0, 0, 255, 0.8)"/>}
             />
             <CustomCircularProgress
-              value={60}
+              value={70}
               text={<RiJavascriptFill className="custom__icon" color="rgba(255, 215, 0, 0.801)"/>}
             />
           </Stack>
@@ -82,7 +82,7 @@ const Skill = () => {
               value={60}
               text={<TbSql className="custom__iconOther" color="rgba(82, 79, 79, 0.818)"/>}
             />
-            <CustomCircularProgress value={30} text={<BiLogoPython className="custom__iconOther" color="rgba(0,128,0, 0.8)"/>} />
+            <CustomCircularProgress value={40} text={<BiLogoPython className="custom__iconOther" color="rgba(0,128,0, 0.8)"/>} />
           </Stack>
         </Grid>
       </Grid>
