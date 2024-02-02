@@ -13,17 +13,13 @@ const Resume = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
-          <Typography className="about">
-            🌟 Hey there! I'm Rohit, your friendly neighborhood web wizard! 🚀
-            <br />
-            💻 As a web developer, I weave digital magic with HTML, CSS, and
-            JavaScript to &nbsp; craft stunning online experiences.
-            <br />
-            <br />
-            &nbsp;Let's turn your web dreams into reality!
-          </Typography>
-        </Grid>
-
+  <Typography className="about" >
+    <div className="section-one">🌟 Hey there! I'm Rohit, your friendly neighborhood web wizard! 🚀</div>
+    <div className="section-two"> 💻 As a web developer, I weave digital magic with HTML, CSS, and JavaScript to craft stunning online experiences.</div>
+   <div className="section-three">  Let's turn your web dreams into reality!</div> 
+  
+  </Typography>
+</Grid>
         {/* Education-section */}
         <Grid item xs={12} md={12}>
           <EducationTimeBar />

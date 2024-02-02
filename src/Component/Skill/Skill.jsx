@@ -15,7 +15,7 @@ const Skill = () => {
   return (
     <div>
       <Typography variant="h5" className="edu__title">
-        skill sets
+        Skill Sets
       </Typography>
       <Grid container>
         {/* item-1 */}

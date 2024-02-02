@@ -104,7 +104,7 @@ const ContactUs = () => {
           onChange={handelMessage}
         />
 
-        <button type="submit" className="btn">
+        <button type="submit" className="btn-submit">
           Submit
         </button>
         <ToastContainer />

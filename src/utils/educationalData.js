@@ -2,7 +2,7 @@ const educationData =[
     {
         id:1,
         title: 'LTIMindtree',
-        years:'Fab2023-May2023',
+        years:'Feb, 2023 - May, 2023',
         description: 'Trainee as inter in java , sql and fundametal of web dev'
     },
 

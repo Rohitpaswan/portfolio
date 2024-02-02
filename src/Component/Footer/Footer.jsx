@@ -3,11 +3,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__left">
-        <p className="left">Looking for new opportunities! <span>Let's connect.</span></p>
+        <p className="left_p" ><span>&copy; 2024 Rohit.</span> All Rights Reserve</p>
       </div>
       <div className="footer__right">
-        <p>
-        <span> © <i>Rohit </i></span> 2024 All Rights Reserved
+        <p className="right_p">
+        Passionate about crafting unique digital experiences
          
         </p>
       </div>

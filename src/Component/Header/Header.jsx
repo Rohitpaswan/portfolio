@@ -109,7 +109,7 @@ const Header = () => {
                 onClick={openGmail}
               >
                 Hire me
-                <Box sx={{ paddingLeft: "8px", paddingTop: "3px" }}>
+                <Box sx={{ paddingLeft: "8px", paddingTop: "3px"  ,mb:"5px"}}>
                   <SendRoundedIcon />
                 </Box>
               </Button>

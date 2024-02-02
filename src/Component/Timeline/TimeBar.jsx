@@ -61,12 +61,13 @@ const TimeBar = () => {
           p: 1,
           borderRadius: 4,
           backgroundColor: "var( --main-color)",
+          fontSize: "14px"
         }}
         onClick={downloadFile}
       >
-        Download Cv
+        Download Resume
         <Box sx={{ paddingLeft: "8px", paddingTop: "3px" }}>
-          <CloudDownloadIcon />
+          <CloudDownloadIcon sx={{mb:"7px"}}/>
         </Box>
       </Button>
     </div>

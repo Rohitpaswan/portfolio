@@ -8,5 +8,13 @@
 
 .about{
     padding: 30px;
-    
+   
+}
+.section-one , .section-two{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.section-three{
+    font-size: 18px;
+    font-weight: 600;
 }

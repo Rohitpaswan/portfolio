@@ -97,7 +97,7 @@ input:focus{
    
  }
 
- .btn{
+ .btn-submit{
   padding: 10px;
   background-color: #333333;
   color: #ddd;
@@ -106,14 +106,18 @@ input:focus{
   margin-top: 5px;
   margin-bottom: 8px;
   transition: all .2s;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all .2s ease-in;
  }
- .btn:hover{
-  background-color: #666666;
+ .btn-submit:hover{
+  background-color: #2e2e2e9c;
   cursor: pointer;
+  border: 2px solid #121111;
  }
 
- .btn:focus{
-  background-color: #ddd;
+ .btn-submit:focus{
+  background-color: #292727;
   color: black;
 
  }
