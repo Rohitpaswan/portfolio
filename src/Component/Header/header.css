@@ -12,6 +12,7 @@
 
 
 
+
 .header__right{
     display: flex;
     align-items: center;
@@ -34,6 +35,30 @@
 .header__smallscreen{
     display: none;
 }
+
+
+.hire-btn{
+    background-color: var(--main-color);
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    gap: 10px;
+    font-weight: 600;
+    transition: all .2s;
+
+}
+.hire-btn:hover{
+background-color: #cfad3bd1;
+border: 2px solid #dfd0a0;
+}
+
+.Button{
+    background-color: aliceblue;
+}
+
 
 @media (max-width:991px){
     .header__lap{

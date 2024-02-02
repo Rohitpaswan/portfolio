@@ -1,3 +1,4 @@
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -14,21 +15,48 @@
    
    margin-bottom: 0;
    font-size: 14px;
+   font-family: 'Single Day', cursive;
     
 }
 .left_p span{
     opacity: .7;
     margin-right: 5px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .right_p{
     margin-bottom: 0;
+    font-size: 16px;
+    font-family: 'Single Day', cursive;
 }
 
 
 @media  (max-width: 900px) {
+    .footer{
+        padding: .8rem 1rem;
+    }
     .left_p{
         font-size: 12px;
+        
+    }
+    .right_p{
+        font-size: 14px;
     }
     
+}
+@media (max-width: 650px){
+    .footer{
+        padding: 10px;
+       
+    }
+.left_p{
+    font-size: 10px;
+   
+}
+.right_p{
+    font-size: 12px;
+    display: none;
+    
+}
 }

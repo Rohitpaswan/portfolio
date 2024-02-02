@@ -13,8 +13,8 @@ import "bootstrap/dist/css/bootstrap.min.css"; /* The following line can be incl
 
 function App() {
   return (
-    <Container>
-      <Grid container>
+    <Container >
+      <Grid container sx={{p:"15px", pt:"30px"}}>
         {/* Left-side  */}
         <Grid
           item
@@ -23,11 +23,13 @@ function App() {
           md={4}
           boxShadow={3}
           sx={{
-            margin: "20px",
-            marginBottom: "39px",
+           marginRight: "38px",
+            marginBottom: "10px",
             background: "azure",
             p: 1,
-            pb: 0.9,
+            pb: 0,
+            height: "750px",
+           
           }}
         >
           <Profile />
@@ -35,12 +37,7 @@ function App() {
         </Grid>
 
         {/* Right-side  */}
-        <Grid
-          item
-          xs
-          style={{ background: "#fff" }}
-          sx={{ margin: "5px", p: 1.2, pb: 0.9 }}
-        >
+        <Grid item xs style={{ background: "#fff" }}>
           <Header />
 
           <div className="main__contain">
@@ -50,7 +47,8 @@ function App() {
               <Route path="/contact" element={<ContactUs />} />
             </Routes>
           </div>
-
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} sx={{ marginBottom: "10px" }}>
           <Footer />
         </Grid>
       </Grid>

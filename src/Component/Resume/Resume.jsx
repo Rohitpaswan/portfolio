@@ -8,8 +8,8 @@ const Resume = () => {
       {/* About Section */}
       <Grid container spacing={2}>
         <Grid item>
-          <Typography variant="h5" className="mainBox__title">
-            About Me
+          <Typography variant="h5" className="mainBox__title" sx={{ '@media (max-width: 600px)': { fontSize: '1.3rem' } }}>
+            ABOUT ME
           </Typography>
         </Grid>
         <Grid item xs={12} md={12}>

@@ -15,7 +15,7 @@ const Skill = () => {
   return (
     <div>
       <Typography variant="h5" className="edu__title">
-        Skill Sets
+        SKILL SETS
       </Typography>
       <Grid container>
         {/* item-1 */}
@@ -32,12 +32,11 @@ const Skill = () => {
               width: "100%",
             }}
           >
-            {" "}
             Frontend skill
           </Typography>
           <Stack direction="row" spacing={2} >
             <CustomCircularProgress
-              value={85}
+              value={75}
               text={<AiFillHtml5 className="custom__icon" color="rgba(241, 15, 26, 0.8)"/>}
             />
             <CustomCircularProgress

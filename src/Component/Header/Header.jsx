@@ -6,12 +6,16 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./header.css";
-import { Button, Box } from "@mui/material";
-import FacebookRounded from "@mui/icons-material/FacebookRounded";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { Button, Box} from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { Instagram } from "@mui/icons-material";
+
+
 const Header = () => {
+
+
+
+
   const openGmail = () => {
     const senderEmail = "rohitpaswan2444@gmail.com";
     const gmailComposeUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${senderEmail}`;
@@ -34,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div >
       <Navbar expand="lg" sticky="top" className=" custom-navbar">
         <Container>
           <NavLink to={"/"}>
@@ -105,7 +109,11 @@ const Header = () => {
                   height: "32px",
                   fontSize: "14px",
                   backgroundColor: "var( --main-color)",
+                  ':hover': {
+                    bgcolor: '#cfad3bd1', // theme.palette.primary.main
+                   }
                 }}
+         
                 onClick={openGmail}
               >
                 Hire me
@@ -117,7 +125,7 @@ const Header = () => {
           </div>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 };
 

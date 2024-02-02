@@ -6,18 +6,20 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { Typography, Box } from "@mui/material";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import profileData from "../../utils/profileData";
-import Button from "@mui/material/Button";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
-import { saveAs } from 'file-saver';
+import { saveAs } from "file-saver";
+
 
 import "./timeBar.css";
-const downloadFile =() =>{
-  const pdfUrl = '../../../RohitPaswan.pdf'; // Specify the URL or local path to your PDF file
-  const pdfFilename = 'RohitPaswan.pdf'; // Specify the filename for the downloaded file
+const downloadFile = () => {
+  const pdfUrl = "../../../RohitPaswan.pdf"; // Specify the URL or local path to your PDF file
+  const pdfFilename = "RohitPaswan.pdf"; // Specify the filename for the downloaded file
   saveAs(pdfUrl, pdfFilename);
-  
-}
+};
+
+
 const TimeBar = () => {
+  
   const dataEntries = Object.entries(profileData);
   return (
     <div>
@@ -46,7 +48,7 @@ const TimeBar = () => {
                 />
               </TimelineSeparator>
               <TimelineContent>
-                <Typography variant="h6" sx={{ padding: 0, fontSize: "14px" }}>
+                <Typography variant="h6" sx={{ padding: 0, fontSize: "14px" , }}>
                   {key}:<span className="x"> {value}</span>
                 </Typography>
               </TimelineContent>
@@ -54,22 +56,13 @@ const TimeBar = () => {
           );
         })}
       </Timeline>
-      <Button
-        variant="contained"
-        sx={{
-          color: "black",
-          p: 1,
-          borderRadius: 4,
-          backgroundColor: "var( --main-color)",
-          fontSize: "14px"
-        }}
+      <button className="download-btn"
         onClick={downloadFile}
       >
         Download Resume
-        <Box sx={{ paddingLeft: "8px", paddingTop: "3px" }}>
-          <CloudDownloadIcon sx={{mb:"7px"}}/>
-        </Box>
-      </Button>
+       
+          <CloudDownloadIcon />
+      </button>
     </div>
   );
 };

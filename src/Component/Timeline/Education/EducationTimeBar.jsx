@@ -14,7 +14,7 @@ const EducationTimeBar = () => {
   
   return (
     <>
-     <Typography variant='h5' className='edu__title'>Educational History</Typography>
+     <Typography variant='h5' className='edu__title' sx={{ '@media (max-width: 600px)': { fontSize: '1.3rem' } }}>EDUCATIONAL HISTORY</Typography>
        <Timeline position="alternate">
         {/* first item */}
        <TimelineItem>
@@ -36,17 +36,17 @@ const EducationTimeBar = () => {
         educationData.map((item , index) =>{
          return(
           <TimelineItem key={index}>
-        <TimelineOppositeContent color="text.secondary">
-        <Typography sx={{fontSize:'12px'}}>{item.description} </Typography>
+        <TimelineOppositeContent color="text.secondary" sx={{'@media (max-width: 600px)': {pl:"8px"}}}>
+        <Typography sx={{fontSize:'12px', '@media (max-width: 600px)': { fontSize:"10px" , pr:"0"}}}>{item.description} </Typography>
           
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot sx={{backgroundColor:"var(--main-color)"}}/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>
-            <Typography sx={{fontSize:'16px' , fontWeight:'600'}}>{item.title}</Typography>
-            <Typography variant='span' sx={{fontSize:'12px'}}>{item.years}</Typography>
+        <TimelineContent sx={{'@media (max-width: 600px)': {pl:"8px"}}}>
+            <Typography sx={{fontSize:'16px' , fontWeight:'600' ,'@media (max-width: 600px)': { fontSize:"14px" }}}>{item.title}</Typography>
+            <Typography variant='span' sx={{fontSize:'12px' , '@media (max-width: 600px)': { fontSize:"10px" }}}>{item.years}</Typography>
         </TimelineContent>
       </TimelineItem> 
          

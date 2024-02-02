@@ -78,7 +78,7 @@ const ContactUs = () => {
   return (
     <div className="right__side">
       <Typography variant="h4" sx={{ mt: 1.5, mb: 1.5 }}>
-        Contact us
+      GET IN TOUCH
       </Typography>
       <form ref={form} onSubmit={sendEmail}>
         {inputs.map((input, index) => {
