@@ -6,16 +6,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./header.css";
-import { Button, Box} from "@mui/material";
+import { Button, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { Instagram } from "@mui/icons-material";
 
-
 const Header = () => {
-
-
-
-
   const openGmail = () => {
     const senderEmail = "rohitpaswan2444@gmail.com";
     const gmailComposeUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${senderEmail}`;
@@ -38,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <div >
+    <div>
       <Navbar expand="lg" sticky="top" className=" custom-navbar">
         <Container>
           <NavLink to={"/"}>
@@ -62,7 +57,6 @@ const Header = () => {
               sx={{ fontSize: "32px", color: "black" }}
               onClick={openGithub}
             />
-            
           </div>
 
           {/* Navigation links */}
@@ -109,15 +103,14 @@ const Header = () => {
                   height: "32px",
                   fontSize: "14px",
                   backgroundColor: "var( --main-color)",
-                  ':hover': {
-                    bgcolor: '#cfad3bd1', // theme.palette.primary.main
-                   }
+                  ":hover": {
+                    bgcolor: "#cfad3bd1", // theme.palette.primary.main
+                  },
                 }}
-         
                 onClick={openGmail}
               >
                 Hire me
-                <Box sx={{ paddingLeft: "8px", paddingTop: "3px"  ,mb:"5px"}}>
+                <Box sx={{ paddingLeft: "8px", paddingTop: "3px", mb: "5px" }}>
                   <SendRoundedIcon />
                 </Box>
               </Button>

@@ -3,12 +3,11 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { Typography, Box } from "@mui/material";
+import { Typography } from "@mui/material";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import profileData from "../../utils/profileData";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import { saveAs } from "file-saver";
-
 
 import "./timeBar.css";
 const downloadFile = () => {
@@ -17,9 +16,7 @@ const downloadFile = () => {
   saveAs(pdfUrl, pdfFilename);
 };
 
-
 const TimeBar = () => {
-  
   const dataEntries = Object.entries(profileData);
   return (
     <div>
@@ -48,7 +45,7 @@ const TimeBar = () => {
                 />
               </TimelineSeparator>
               <TimelineContent>
-                <Typography variant="h6" sx={{ padding: 0, fontSize: "14px" , }}>
+                <Typography variant="h6" sx={{ padding: 0, fontSize: "14px" }}>
                   {key}:<span className="x"> {value}</span>
                 </Typography>
               </TimelineContent>
@@ -56,12 +53,9 @@ const TimeBar = () => {
           );
         })}
       </Timeline>
-      <button className="download-btn"
-        onClick={downloadFile}
-      >
+      <button className="download-btn" onClick={downloadFile}>
         Download Resume
-       
-          <CloudDownloadIcon />
+        <CloudDownloadIcon />
       </button>
     </div>
   );
