@@ -7,13 +7,19 @@ const CustomCircularProgress = ({ value, text }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (progress < value) {
-        setProgress(progress + 10);
-      } else {
-        clearInterval(interval);
-      }
-    }, 900);
+    let interval;
+    
+    if (window.innerWidth > 500) {
+      interval = setInterval(() => {
+        if (progress < value) {
+          setProgress(progress + 10);
+        } else {
+          clearInterval(interval);
+        }
+      }, 800);
+    } else {
+      setProgress(value);
+    }
 
     return () => clearInterval(interval);
   }, [value, progress]);
